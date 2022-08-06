@@ -1,5 +1,5 @@
 
-button.onclick = function(){
+button_start.onclick = function(){
 	// создание массива из данных таблицы
 let arrTable = [
 			[document.getElementById("1a").value,document.getElementById("1b").value,document.getElementById("1c").value,document.getElementById("1d").value,document.getElementById("1e").value],
@@ -118,8 +118,72 @@ function outputOfRows(){
 	document.getElementById('answer').appendChild(table);
 }
 outputOfRows();
-// console.log("answer");
-// for(let i=0; i<arrTable.length; i++) {
-//    console.log(arrTable[i]);
-// }
+}
+
+button_test.onclick = function(){
+	document.getElementById("1a").value = 100;
+	document.getElementById("1b").value = 25;
+	document.getElementById("1c").value = 3;
+	document.getElementById("1d").value = 16;
+	document.getElementById("1e").value = 15;
+
+	document.getElementById("2a").value = 200;
+	document.getElementById("2b").value = 3;
+	document.getElementById("2c").value = 3;
+	document.getElementById("2d").value = 2;
+	document.getElementById("2e").value = 1;
+
+	document.getElementById("3a").value = 300;
+	document.getElementById("3b").value = 3;
+	document.getElementById("3c").value = 1;
+	document.getElementById("3d").value = 1;
+	document.getElementById("3e").value = 1;
+	
+	document.getElementById("4a").value = 100;
+	document.getElementById("4b").value = 25;
+	document.getElementById("4c").value = 3;
+	document.getElementById("4d").value = 4;
+	document.getElementById("4e").value = 52;
+	
+	document.getElementById("5a").value = 200;
+	document.getElementById("5b").value = 3;
+	document.getElementById("5c").value = 3;
+	document.getElementById("5d").value = 2;
+	document.getElementById("5e").value = 1;
+
+	document.getElementById("6a").value = 300;
+	document.getElementById("6b").value = 3;
+	document.getElementById("6c").value = 1;
+	document.getElementById("6d").value = 1;
+	document.getElementById("6e").value = 1;
+
+	document.getElementById("7a").value = 100;
+	document.getElementById("7b").value = 25;
+	document.getElementById("7c").value = 3;
+	document.getElementById("7d").value = 5;
+	document.getElementById("7e").value = 53;
+
+	document.getElementById("8a").value = 200;
+	document.getElementById("8b").value = 3;
+	document.getElementById("8c").value = 3;
+	document.getElementById("8d").value = 2;
+	document.getElementById("8e").value = 1;
+	
+	document.getElementById("9a").value = 300;
+	document.getElementById("9b").value = 3;
+	document.getElementById("9c").value = 1;
+	document.getElementById("9d").value = 1;
+	document.getElementById("9e").value = 1;
+	
+	document.getElementById("10a").value = 100;
+	document.getElementById("10b").value = 25;
+	document.getElementById("10c").value = 3;
+	document.getElementById("10d").value = 20;
+	document.getElementById("10e").value = 101;
+
+	document.querySelector("#select1").value = "criterion";
+	document.querySelector("#select2").value = "sum";
+	document.querySelector("#select3").value = "criterion";
+	document.querySelector("#select4").value = "skip";
+	document.querySelector("#select5").value = "concatenation";
 }
