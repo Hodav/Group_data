@@ -59,6 +59,7 @@ function comparingRows() { 		//функция сравнивания и груп
 						}
 					}
 					pass = 0;
+					criterion = 0;
 				}
 			}
 		}
