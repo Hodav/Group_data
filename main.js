@@ -26,15 +26,15 @@ function comparingRows() { 		//функция сравнивания и груп
 
 	for (var s = 0; s < arrTable.length-1; s++) {	//Берется одна строка
 		if(arrTable_group[s]==0){//вхождение только при условии что строка еще не сгруппированна
-			arrTable_group[s] = 1;
+			arrTable_group[s] = 1;//присвоение значения первой строки группы
 			for (var i = s+1; i <= arrTable.length-1; i++) { // Сравнивается со всеми последующими
 				if(arrTable_group[i]==0){//вхождение только при условии что строка еще не сгруппированна
 					
 					for (var j = 0; j < arrTable[0].length; j++) { // Сравнивание параллельных ячеек
 						
 						if ((arrRequirement[j] == "criterion")&&(arrTable[s][j] == arrTable[i][j])||(arrRequirement[j] != "criterion")){
-							pass++;
-							if(arrRequirement[j] == "criterion") criterion++;
+							pass++;//увеличение счетчика совместимости строк
+							if(arrRequirement[j] == "criterion") criterion++; // счетчик критериев
 						}
 						
 					}
@@ -77,11 +77,11 @@ function outputOfRows(){
 	//удаление предыдущей таблицы
 	document.getElementById('answer').innerHTML = "";
 
-	let outputMassage = document.createElement('div');
+	let outputMassage = document.createElement('div');//Вывод надписи "Результат"
 	outputMassage.innerHTML = "Результат";
 	document.getElementById('answer').appendChild(outputMassage);
 
-	let table = document.createElement('table'),
+	let table = document.createElement('table'),//создание таблицы с помощью DOM
 		 thead = document.createElement('thead'),
 		 tbody = document.createElement('tbody');
 	table.appendChild(thead);
@@ -120,7 +120,7 @@ function outputOfRows(){
 }
 outputOfRows();
 }
-
+//тестовые значения
 button_test.onclick = function(){
 	document.getElementById("1a").value = 100;
 	document.getElementById("1b").value = 25;
